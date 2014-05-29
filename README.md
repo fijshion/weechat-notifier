@@ -10,11 +10,15 @@ Enable relay in WeeChat with the command:
 
     /relay add weechat PORT
 
+You need to export the variables SERVER, PASSWORD, PORT and NICKS (comma-separated).
 Then install with: 
 
+    npm install -g weechat-notifier
+    
+    # Or:
+    
     git clone git@github.com:eirsyl/weechat-notifier.git
     npm install 
-    # Export SERVER, PASSWORD and NICKS (comma-separated) before running.
     node index.js
 
 ### launchd
