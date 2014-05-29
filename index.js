@@ -6,7 +6,7 @@ var weechat = require('weechat'),
 
 var properties = {
   server:   process.env.SERVER,
-  port:     8001,
+  port:     process.env.PORT,
   password: process.env.PASSWORD,
   ssl:      false,
   nicks:    process.env.NICKS.split(',')
