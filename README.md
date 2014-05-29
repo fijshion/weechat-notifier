@@ -1,10 +1,16 @@
 weechat-notifier
 ================
 
-WeeChat notifications on OSX using Weechat relay protocol.
+WeeChat notifications on OS X using Weechat relay protocol.
 
 
 ### Installation
+
+Enable relay in WeeChat with the command: 
+
+    /relay add weechat PORT
+
+Then install with: 
 
     git clone git@github.com:eirsyl/weechat-notifier.git
     npm install 
