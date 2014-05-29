@@ -8,6 +8,7 @@ WeeChat notifications on OS X using Weechat relay protocol.
 
 Enable relay in WeeChat with the command: 
 
+    /set relay.network.password "your password"
     /relay add weechat PORT
 
 You need to export the variables SERVER, PASSWORD, PORT and NICKS (comma-separated).
