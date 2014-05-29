@@ -1,6 +1,6 @@
 {
   "name": "weechat-notifier",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "WeeChat notifications on OS X using the WeeChat relay protocol.",
   "main": "index.js",
   "author": "Eirik Martiniussen Sylliaas",
@@ -12,8 +12,8 @@
     "weechat": "0.0.17",
     "osx-notifier": "~0.2.1"
   },
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/eirsyl/weechat-notifier.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eirsyl/weechat-notifier.git"
   }
 }
