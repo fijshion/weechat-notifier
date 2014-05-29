@@ -37,8 +37,10 @@ client.on('line', function(line) {
   var containsNick = properties.nicks.some(function(nick) {
     return message.indexOf(nick) !== -1;
   });
+  var isSelf = properties.nicks.some(function(nick) {
+    return nick === from;
+  });
   var isPrivate = line.tags_array.indexOf('notify_private') !== -1;
-  var isSelf = from === properties.nick;
 
   // Make sure the message is either a highlight or a PM:
   if ((!isSelf && containsNick) || isPrivate) {
