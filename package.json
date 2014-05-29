@@ -1,13 +1,10 @@
 {
   "name": "weechat-notifier",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "version": "0.0.1",
+  "description": "WeeChat notifications on OS X using the WeeChat relay protocol.",
+  "main": "index.js", 
+  "author": "Eirik Martiniussen Sylliaas",
+  "license": "MIT",
   "dependencies": {
     "weechat": "0.0.17",
     "osx-notifier": "~0.2.1"
