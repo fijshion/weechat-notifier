@@ -1,7 +1,11 @@
+Fork of https://github.com/eirsyl/weechat-notifier
+
+This version uses [node-notifier](https://github.com/mikaelbr/node-notifier) to enable notifications on more platforms.
+
 weechat-notifier
 ================
 
-WeeChat notifications on OS X using Weechat relay protocol.
+WeeChat notifications using Weechat relay protocol.
 
 
 ### Installation
@@ -11,17 +15,11 @@ Enable relay in WeeChat with the command:
     /set relay.network.password "your password"
     /relay add weechat PORT
 
-You need to export the variables SERVER, PASSWORD, PORT and NICKS (comma-separated).
 Then install with: 
 
-    npm install -g weechat-notifier
-    
-    # Or:
-    
-    git clone git@github.com:eirsyl/weechat-notifier.git
+    git clone git@github.com:fijshion/weechat-notifier.git
     npm install 
-    node index.js
 
-### launchd
+### Usage:
 
-If you want weechat-notifier to run on startup you can add it as a launchd-plist (~/Library/LaunchAgents). A template can be found [here](https://gist.github.com/ekmartin/05b794ac1a2eaa803ff0).
+    node index.js --server=<server> --port=<port> --password=<password> --nicks=<nicks> --ssl=<true|false>
