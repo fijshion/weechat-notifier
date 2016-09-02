@@ -22,8 +22,7 @@ var properties = {
 
 var raiseNotification = function(from, message) {
   notifier.notify({
-    title: 'WeeChat',
-    subtitle: from,
+    title: from,
     message: message,
   });
 };
